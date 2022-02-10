@@ -8,6 +8,22 @@
 import SwiftUI
 import CoreHaptics
 
+// custom button view for haptics
+struct HapticsButtonView: View {
+    
+    @State var hapticLabel: String = ""
+    @State var color: Color
+    
+    var body: some View{
+        ZStack{
+            Circle()
+                .foregroundColor(color)
+            Text(hapticLabel)
+                .foregroundColor(.white)
+        }
+    }
+}
+
 struct ContentView: View {
     
     var body: some View {
