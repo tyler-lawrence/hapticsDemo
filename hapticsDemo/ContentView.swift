@@ -8,6 +8,7 @@
 import SwiftUI
 import CoreHaptics
 
+// custom button view for haptics
 struct HapticsButtonView: View {
     
     @State var hapticLabel: String = ""
